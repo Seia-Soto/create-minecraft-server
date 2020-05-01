@@ -18,7 +18,7 @@ if ! [[ "$VERSION" ]]; then
 fi
 
 # Confirm version to build.
-if ! [[ "$1" =~ latest|v\d+\.\d+\.\d+ ]]; then
+if ! [[ "$1" =~ latest|\d+\.\d+\.\d+ ]]; then
   echo "WARNING: The given version string is not identified. Please check again." >&2
   echo "WARNING: To specify the version of the bucket, use '$0 install [version]' instead." >&2
 fi
